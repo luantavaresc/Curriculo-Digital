@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Fira Sans", Arial, sans-serif;
   margin: 0px;
@@ -33,6 +37,33 @@ img {
   line-height: 1;
   text-transform: uppercase;
   max-width: 4ch;
+}
+
+#btnTop{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow{
+  border: solid #141414 ;
+  border-width: 0 7px 7px 0;
+  padding: 5px;
+  display: inline-block;
+}
+
+.up{
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 
 @media (max-width: 800px) {
